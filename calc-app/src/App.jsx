@@ -1,13 +1,15 @@
 import React from "react";
+import Result from "./components/Result"
 import "./App.css";
 
 //Generación de la funcion del componente  con una Función flecha o Arrow function
 const App = () => {
   //Lo que ejecuta la función
+  console.log("Renderización de App");
   return (
     <main className="react-calculator">
-     <div className="result">
-        </div>
+     <Result value={0} text="hola"/>
+     {/* <Result value="hola/> */}
         <div className="numbers">
             <button>1</button>
             <button>2</button>
