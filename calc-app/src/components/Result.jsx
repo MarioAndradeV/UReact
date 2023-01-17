@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // const Result = (props) =>{
 //     // debugger
@@ -37,7 +38,18 @@ const Result = ({value, text}) =>{
 
 }
 
-export default Result
+Result.propTypes ={
+    value: PropTypes.string.isRequired
+}
+
+Result.defaultProps = {
+    value:"0"
+
+}
+
+export default Result;
+
+
 
 // Object Destructuring ECMAS6
 
